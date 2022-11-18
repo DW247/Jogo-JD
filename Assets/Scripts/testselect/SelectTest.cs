@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class SelectTest : MonoBehaviour
 {
@@ -9,6 +11,8 @@ public class SelectTest : MonoBehaviour
     private bool sel;
     [SerializeField]
     public int ok;
+    public GameObject lixo; 
+    public GameObject lixeira; 
     // Start is called before the first frame update
     void Start()
     {
@@ -18,99 +22,43 @@ public class SelectTest : MonoBehaviour
     }
 
 
-    public void SelecionadoAzul()
+    //public void SelecionadoAzul()
+    //{
+    //        ok = 1;
+    //        print("Azul selecionada");
+    //}
+    //public void SelecionadoVermelho()
+    //{
+    //        ok = 2;
+    //        print("Vermelho selecionada");
+    //}
+    //public void SelecionadoVerde()
+    //{
+    //        ok = 3;
+    //        print("verde selecionada");
+    //}
+    //public void SelecionadoMarrom()
+    //{
+    //        ok = 4;
+    //        print("Marrom selecionada");
+    //}
+    //public void SelecionadoCinza()
+    //{
+    //        ok = 5;
+    //        print("Ciznza selecionada");
+       
+    //}
+    //public void SelecionadoAmarelo()
+    //{
+    //        ok = 6;
+    //        print("Amarelo selecionada");
+    //}
+    void OnMouseDown()
     {
-        //if (sel == false && ok == 0)
-        //{
-            //sel = sel;
-            ok = 1;
-            
-            print("Azul selecionada");
-        //}
-        //else if(sel == true)
-        //{
-        //    sel = !sel;
-        //    ok = 0;
-        //}
-
+        
     }
-    public void SelecionadoVermelho()
+    public void JogarLixo()
     {
-        //if (sel == false && ok ==0)
-        //{
-            //sel = sel;
-            ok = 2;
-            
-            print("Vermelho selecionada");
-        //}
-        //else if (sel == true)
-        //{
-        //    sel = !sel;
-        //    ok = 0;
-        //}
-
-    }
-    public void SelecionadoVerde()
-    {
-        //if (sel == false && ok == 0)
-        //{
-            //sel = sel;
-            ok = 3;
-            print("verde selecionada");
-        //}
-        //else if (sel == true)
-        //{
-        //    sel = !sel;
-        //    ok = 0;
-        //}
-
-    }
-    public void SelecionadoMarrom()
-    {
-        //if (sel == false && ok == 0)
-        //{
-            //sel = sel;
-            ok = 4;
-            print("Marrom selecionada");
-        //}
-        //else if (sel == true)
-        //{
-        //    sel = !sel;
-        //    ok = 0;
-
-        //}
-
-    }
-    public void SelecionadoCinza()
-    {
-        //if (sel == false && ok == 0)
-        //{
-            //sel = sel;
-            ok = 5;
-            print("Ciznza selecionada");
-        //}
-        //else if (sel == true)
-        //{
-        //    sel = !sel;
-        //    ok = 0;
-
-        //}
-
-    }
-    public void SelecionadoAmarelo()
-    {
-        //if (sel == false && ok == 0)
-        //{
-            //sel = !sel;
-            ok = 6;
-            print("Amarelo selecionada");
-        //}
-        //else if (sel == true)
-        //{
-        //    sel = !sel;
-        //    ok = 0;
-
-        //}
-
+        //if (lixo.CompareTag())
     }
 }

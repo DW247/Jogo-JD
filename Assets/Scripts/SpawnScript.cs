@@ -27,37 +27,10 @@ public class SpawnScript : MonoBehaviour
 
     void Spawnar()
     {
-        //whatToSpawn = Random.Range(1, 7);
-        //switch (whatToSpawn)
-        //{
-        //    case 1:
-        //        GameObject.Instantiate(prefab1, transform.position, Quaternion.identity, GameObject.FindGameObjectWithTag("Canvas").transform);
-        //        break;
-
-        //    case 2:
-        //        GameObject.Instantiate(prefab2, transform.position, Quaternion.identity, GameObject.FindGameObjectWithTag("Canvas").transform);
-        //        break;
-
-        //    case 3:
-        //        GameObject.Instantiate(prefab3, transform.position, Quaternion.identity, GameObject.FindGameObjectWithTag("Canvas").transform);
-        //        break;
-
-        //    case 4:
-        //        GameObject.Instantiate(prefab4, transform.position, Quaternion.identity, GameObject.FindGameObjectWithTag("Canvas").transform);
-        //        break;
-
-        //    case 5:
-        //        GameObject.Instantiate(prefab5, transform.position, Quaternion.identity, GameObject.FindGameObjectWithTag("Canvas").transform);
-        //        break;
-
-        //    case 6:
-        //        GameObject.Instantiate(prefab6, transform.position, Quaternion.identity, GameObject.FindGameObjectWithTag("Canvas").transform);
-        //        break;
-        //}
-
         for (int i = 0; i < spawnPosition.Length; i++)
         {
             var instancia = Instantiate(prefab[Random.Range(0, prefab.Length)], spawnPosition[i].position, Quaternion.identity);
+            instancia.transform.SetParent(this.transform);
             
 
         }
