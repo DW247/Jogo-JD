@@ -29,14 +29,14 @@ public class Timer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (LixoSelect.contagem == 6)
-        {
+        //if (LixoSelect.contagem == 6)
+        //{
             
-            minute = minuteDefault;
-            second = secondDefault;
+        //    minute = minuteDefault;
+        //    second = secondDefault;
             
             
-        }
+        //}
 
         if (minute <= 0 && second <= 0)
         {            
@@ -57,12 +57,12 @@ public class Timer : MonoBehaviour
         }
 
 
-        if (minute <= 0 && second <= 0 && LixoSelect.contagem <= 5)
-        {
-            Telaperdeu();
+        //if (minute <= 0 && second <= 0 && LixoSelect.contagem <= 5)
+        //{
+        //    Telaperdeu();
 
 
-        }
+        //}
 
 
 

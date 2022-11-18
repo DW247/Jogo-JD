@@ -6,6 +6,10 @@ using UnityEngine;
 public class DepotManager : MonoBehaviour
 {
     public GameObject []slots;
+    private void Awake()
+    {
+        
+    }
     // Start is called before the first frame update
     void Start()
     {
