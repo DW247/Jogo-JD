@@ -9,10 +9,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2207702218495649800}
-  - component: {fileID: 4494316430182720406}
-  m_Layer: 5
+  - component: {fileID: -1561243150414659513}
+  - component: {fileID: 9114203298899684110}
+  m_Layer: 6
   m_Name: Metal
-  m_TagString: Untagged
+  m_TagString: Metal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -39,7 +40,7 @@ RectTransform:
   m_AnchoredPosition: {x: -959.1325, y: -540.48834}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &4494316430182720406
+--- !u!114 &-1561243150414659513
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -48,16 +49,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 1046775509130757856}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 192117f80778f4542a0523c711fac525, type: 3}
+  m_Script: {fileID: 11500000, guid: 34d16234d97b83548b490f8b82e20124, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lixoAzul: 0
-  lixoVermelho: 0
-  lixoVerde: 0
-  lixoMarrom: 0
-  lixoCinza: 0
-  lixoAmarelo: 0
-  dadosOk: 0
+--- !u!222 &9114203298899684110
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1046775509130757856}
+  m_CullTransparentMesh: 1
 --- !u!1 &3843738920621210497
 GameObject:
   m_ObjectHideFlags: 0
@@ -70,8 +72,9 @@ GameObject:
   - component: {fileID: 3861598720401106643}
   - component: {fileID: 2276055991162036825}
   - component: {fileID: 7402786622387299276}
-  m_Layer: 5
-  m_Name: Image
+  - component: {fileID: 7494062890143692427}
+  m_Layer: 6
+  m_Name: Hitbox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -152,9 +155,9 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 4494316430182720406}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: LixoSelect, Assembly-CSharp
-          m_MethodName: SelecionadoAmarelo
+          m_MethodName: OnMouseDown
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -164,6 +167,18 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!114 &7494062890143692427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3843738920621210497}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34d16234d97b83548b490f8b82e20124, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4445819587107258570
 GameObject:
   m_ObjectHideFlags: 0
@@ -175,7 +190,7 @@ GameObject:
   - component: {fileID: 5746071737092836671}
   - component: {fileID: 3388022829614071594}
   - component: {fileID: 2063113635768560949}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: lixo
   m_TagString: Untagged
   m_Icon: {fileID: 0}

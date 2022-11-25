@@ -12,8 +12,9 @@ GameObject:
   - component: {fileID: 5800171921171203359}
   - component: {fileID: 437542017097859977}
   - component: {fileID: 6160061812335016473}
-  m_Layer: 5
-  m_Name: Image
+  - component: {fileID: 1986702046090202605}
+  m_Layer: 6
+  m_Name: Hitbox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -94,9 +95,9 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1300849927165707283}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: LixoSelect, Assembly-CSharp
-          m_MethodName: SelecionadoMarrom
+          m_MethodName: OnMouseDown
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -106,6 +107,18 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!114 &1986702046090202605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 826293550138828582}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34d16234d97b83548b490f8b82e20124, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1371211326230622740
 GameObject:
   m_ObjectHideFlags: 0
@@ -117,7 +130,7 @@ GameObject:
   - component: {fileID: 6189333555226379808}
   - component: {fileID: 6678655484869502740}
   - component: {fileID: 4231849189668061339}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: lixo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -191,10 +204,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7869203838184525094}
-  - component: {fileID: 1300849927165707283}
-  m_Layer: 5
+  - component: {fileID: -95146863613223403}
+  m_Layer: 6
   m_Name: Organico
-  m_TagString: Untagged
+  m_TagString: Organico
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -221,7 +234,7 @@ RectTransform:
   m_AnchoredPosition: {x: -959.1325, y: -540.48834}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1300849927165707283
+--- !u!114 &-95146863613223403
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -230,13 +243,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 2001613804871982530}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 192117f80778f4542a0523c711fac525, type: 3}
+  m_Script: {fileID: 11500000, guid: 34d16234d97b83548b490f8b82e20124, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lixoAzul: 0
-  lixoVermelho: 0
-  lixoVerde: 0
-  lixoMarrom: 0
-  lixoCinza: 0
-  lixoAmarelo: 0
-  dadosOk: 0

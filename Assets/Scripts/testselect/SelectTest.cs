@@ -4,61 +4,47 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
+
 public class SelectTest : MonoBehaviour
 {
     public static SelectTest selectTest;
-    [SerializeField]
-    private bool sel;
-    [SerializeField]
+    //private bool sel;
+    //[SerializeField]
     public int ok;
+    public LayerMask lixoLayer;
+    public LayerMask lixeiraLayer;
     public GameObject lixo; 
     public GameObject lixeira; 
     // Start is called before the first frame update
     void Start()
     {
-        selectTest = this;
-        sel = false;
+              
         ok = 0;
     }
-
-
-    //public void SelecionadoAzul()
-    //{
-    //        ok = 1;
-    //        print("Azul selecionada");
-    //}
-    //public void SelecionadoVermelho()
-    //{
-    //        ok = 2;
-    //        print("Vermelho selecionada");
-    //}
-    //public void SelecionadoVerde()
-    //{
-    //        ok = 3;
-    //        print("verde selecionada");
-    //}
-    //public void SelecionadoMarrom()
-    //{
-    //        ok = 4;
-    //        print("Marrom selecionada");
-    //}
-    //public void SelecionadoCinza()
-    //{
-    //        ok = 5;
-    //        print("Ciznza selecionada");
-       
-    //}
-    //public void SelecionadoAmarelo()
-    //{
-    //        ok = 6;
-    //        print("Amarelo selecionada");
-    //}
-    void OnMouseDown()
+    private void Awake()
     {
+        selectTest = this;
+    }
+
+    private void Update()
+    {
+        if (EventSystem.current.gameObject.layer == 7) 
+        {
+            lixeira = EventSystem.current.gameObject; 
         
+        }
     }
     public void JogarLixo()
     {
-        //if (lixo.CompareTag())
+       if(lixeira != null && lixo != null)
+        {
+            if (lixeira.CompareTag(lixo.tag))
+            {
+                Destroy(lixo);
+                lixo = null;
+                lixeira = null;
+            }
+        }
     }
+
 }

@@ -9,10 +9,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 206630609590880825}
-  - component: {fileID: 8438318154226396832}
-  m_Layer: 5
+  - component: {fileID: -2136677261382367298}
+  m_Layer: 6
   m_Name: Papel
-  m_TagString: Untagged
+  m_TagString: Papel
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -39,7 +39,7 @@ RectTransform:
   m_AnchoredPosition: {x: -959.1325, y: -540.48834}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &8438318154226396832
+--- !u!114 &-2136677261382367298
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -48,16 +48,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 206630609590880824}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 192117f80778f4542a0523c711fac525, type: 3}
+  m_Script: {fileID: 11500000, guid: 34d16234d97b83548b490f8b82e20124, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lixoAzul: 0
-  lixoVermelho: 0
-  lixoVerde: 0
-  lixoMarrom: 0
-  lixoCinza: 0
-  lixoAmarelo: 0
-  dadosOk: 0
 --- !u!1 &3282895170777023142
 GameObject:
   m_ObjectHideFlags: 0
@@ -70,8 +63,9 @@ GameObject:
   - component: {fileID: 6075757249048332392}
   - component: {fileID: 5480171876006491403}
   - component: {fileID: 4325292494217238283}
-  m_Layer: 5
-  m_Name: Image
+  - component: {fileID: 6002639727430720506}
+  m_Layer: 6
+  m_Name: Hitbox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -152,9 +146,9 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 8438318154226396832}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: LixoSelect, Assembly-CSharp
-          m_MethodName: SelecionadoAzul
+          m_MethodName: OnMouseDown
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -164,6 +158,18 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!114 &6002639727430720506
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3282895170777023142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34d16234d97b83548b490f8b82e20124, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3480353323702624754
 GameObject:
   m_ObjectHideFlags: 0
@@ -175,7 +181,7 @@ GameObject:
   - component: {fileID: 8023268116411643102}
   - component: {fileID: 5761182737395109217}
   - component: {fileID: 221804642380006509}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: lixo
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -31,8 +31,6 @@ public class SpawnScript : MonoBehaviour
         {
             var instancia = Instantiate(prefab[Random.Range(0, prefab.Length)], spawnPosition[i].position, Quaternion.identity);
             instancia.transform.SetParent(this.transform);
-            
-
         }
     }
 

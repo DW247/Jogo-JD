@@ -140,9 +140,10 @@ public class LixoSelect : MonoBehaviour
     //    }
     //}
 
-    private void OnMouseDown()
+    public void OnMouseDown()
     {
         _tag = gameObject.tag;
+        print(_tag);
     }
 
 

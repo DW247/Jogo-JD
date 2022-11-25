@@ -774,8 +774,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 467.99988, y: -303.99997}
-  m_SizeDelta: {x: 638.773, y: 382.381}
+  m_AnchoredPosition: {x: 483.37, y: -304}
+  m_SizeDelta: {x: 474.707, y: 284.168}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &273349124
 MonoBehaviour:
@@ -797,7 +797,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 8b562a18c49ebb847a3cc4a0b2c61274, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 31dd798de82e90047ab4b32a09ee4af0, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1290,7 +1290,7 @@ RectTransform:
   m_GameObject: {fileID: 768651322}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.9999878, y: 0.9999878, z: 0.9999878}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1762537282}
@@ -1298,8 +1298,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -444.99997, y: -304.00003}
-  m_SizeDelta: {x: 713.982, y: 429.296}
+  m_AnchoredPosition: {x: -451.05, y: -289.74}
+  m_SizeDelta: {x: 456.944, y: 356.73}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &768651324
 MonoBehaviour:
@@ -1321,9 +1321,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 3c62c22b6f5934b459fdda059bc03b89, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3929f455bad3b694f91eb8ff9cc576c8, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -2781,7 +2781,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_SendPointerHoverToParent: 1
   m_HorizontalAxis: Horizontal
   m_VerticalAxis: Vertical
   m_SubmitButton: Submit
