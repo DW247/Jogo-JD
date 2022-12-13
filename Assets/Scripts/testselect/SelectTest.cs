@@ -14,16 +14,18 @@ public class SelectTest : MonoBehaviour
     public LayerMask lixoLayer;
     public LayerMask lixeiraLayer;
     public GameObject lixo; 
-    public GameObject lixeira; 
+    public GameObject lixeira;
+    public AudioSource som;
+   
     // Start is called before the first frame update
     void Start()
-    {
-              
+    {             
         ok = 0;
     }
     private void Awake()
     {
         selectTest = this;
+        som = GetComponent<AudioSource>();
     }
 
     private void Update()
@@ -40,6 +42,8 @@ public class SelectTest : MonoBehaviour
         {
             if (lixeira.CompareTag(lixo.tag))
             {
+                ok++;
+                som.Play();
                 Destroy(lixo);
                 lixo = null;
                 lixeira = null;

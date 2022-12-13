@@ -13,8 +13,10 @@ public class SpawnScript : MonoBehaviour
     int whatToSpawn;
     public Timer timer;
 
+
     private void Start()
     {
+        
         Spawnar();
     }
     void Update()
