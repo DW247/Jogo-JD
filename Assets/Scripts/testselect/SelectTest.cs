@@ -31,34 +31,34 @@ public class SelectTest : MonoBehaviour
     //{
     //        ok = 2;
     //        print("Vermelho selecionada");
-    //}
+    // }
     //public void SelecionadoVerde()
     //{
-    //        ok = 3;
-    //        print("verde selecionada");
-    //}
-    //public void SelecionadoMarrom()
-    //{
-    //        ok = 4;
+    //       ok = 3;
+   //         print("verde selecionada");
+  //}
+   // public void SelecionadoMarrom()
+   // {
+   //         ok = 4;
     //        print("Marrom selecionada");
     //}
     //public void SelecionadoCinza()
     //{
-    //        ok = 5;
+    //       ok = 5;
     //        print("Ciznza selecionada");
        
-    //}
-    //public void SelecionadoAmarelo()
+   // }
+   // public void SelecionadoAmarelo()
     //{
     //        ok = 6;
     //        print("Amarelo selecionada");
-    //}
-    void OnMouseDown()
-    {
+   // }
+    //void OnMouseDown()
+    //{
         
-    }
-    public void JogarLixo()
-    {
-        //if (lixo.CompareTag())
-    }
+    //}
+    //public void JogarLixo()
+    //{
+    //  if (lixo.CompareTag());
+    //}
 }
